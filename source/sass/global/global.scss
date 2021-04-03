@@ -1,7 +1,6 @@
 /* Общие стили. Каркас
    ========================================================================== */
 
-
 body {
   margin: 0;
 }
@@ -12,6 +11,10 @@ img {
 
 a {
   text-decoration: none;
+}
+
+li {
+  list-style-type: none;
 }
 
 *,
@@ -29,6 +32,6 @@ a {
 fieldset {
   margin: 0;
   padding: 0;
-
   border: 0;
 }
+

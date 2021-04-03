@@ -1,0 +1,43 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/OpenSans-Regular.woff2") format("woff2"), url("../fonts/OpenSans-Regular.woff") format("woff");
+  font-display: swap; }
+
+@font-face {
+  font-family: "Open Sans";
+  font-style: bold;
+  font-weight: 700;
+  src: url("../fonts/OpenSans-Bold.woff2") format("woff2"), url("../fonts/OpenSans-Bold.woff") format("woff");
+  font-display: swap; }
+
+/* Общие стили. Каркас
+   ========================================================================== */
+body {
+  margin: 0; }
+
+img {
+  max-width: 100%; }
+
+a {
+  text-decoration: none; }
+
+li {
+  list-style-type: none; }
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box; }
+
+.content-box-component {
+  box-sizing: content-box; }
+
+fieldset {
+  margin: 0;
+  padding: 0;
+  border: 0; }
+
+/*# sourceMappingURL=style.css.map */
