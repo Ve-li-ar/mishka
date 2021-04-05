@@ -15,8 +15,9 @@
 
 /* Общие стили. Каркас
    ========================================================================== */
-body {
-  margin: 0; }
+.page-body {
+  margin: 0 auto;
+  font-family: "Open Sans" "Verdana", sans-serif; }
 
 img {
   max-width: 100%; }
@@ -39,5 +40,74 @@ fieldset {
   margin: 0;
   padding: 0;
   border: 0; }
+
+@media (max-width: 1150px) {
+  .page-body {
+    width: 1050px; } }
+
+@media (max-width: 772px) {
+  .page-body {
+    width: 672px; } }
+
+@media (max-width: 320px) {
+  .page-body {
+    width: 260px; } }
+
+.header {
+  color: #ffffff; }
+
+.main-nav__wrap {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; }
+
+.main-nav__wrap ul {
+  padding-left: 0px; }
+
+.main-nav__line {
+  display: flex; }
+
+.main-nav__toggle {
+  display: none; }
+
+.main-nav__link {
+  color: #000000;
+  font-weight: 700; }
+
+@media (max-width: 1150px) {
+  .main-nav__item {
+    width: 235px; } }
+
+@media (max-width: 772px) {
+  .main-nav__item {
+    width: 100%; } }
+
+@media (max-width: 1150px) {
+  .main-nav__link--big {
+    font-style: 17px; } }
+
+@media (max-width: 772px) {
+  .main-nav__link--big {
+    font-size: 15px; } }
+
+@media (max-width: 320px) {
+  .main-nav__link--big {
+    font-size: 17px; } }
+
+.main-nav__link--small {
+  font-size: 15px; }
+
+.main-nav__link--span {
+  font-weight: 400;
+  font-family: Open Sans; }
+
+.main-nav__logo-basket {
+  display: flex;
+  justify-content: space-between;
+  width: 100%; }
+
+.main-nav__item--basket {
+  text-align: end;
+  width: 100%; }
 
 /*# sourceMappingURL=style.css.map */

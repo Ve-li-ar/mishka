@@ -1,8 +1,9 @@
 /* Общие стили. Каркас
    ========================================================================== */
 
-body {
-  margin: 0;
+.page-body {
+  margin: 0 auto;
+  font-family: $OpenSans;
 }
 
 img {
@@ -21,12 +22,12 @@ li {
 *::before,
 *::after {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .content-box-component {
   -webkit-box-sizing: content-box;
-          box-sizing: content-box;
+  box-sizing: content-box;
 }
 
 fieldset {
@@ -35,3 +36,16 @@ fieldset {
   border: 0;
 }
 
+.page-body {
+  @media (max-width: $desktop-max) {
+    width: 1050px;
+  }
+
+  @media (max-width: $tablet-max) {
+    width: 672px;
+  }
+
+  @media (max-width: $mobile-max) {
+    width: 260px;
+  }
+}

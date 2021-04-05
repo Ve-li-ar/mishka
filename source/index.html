@@ -1,201 +1,230 @@
 <!DOCTYPE html>
 <html class="page" lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>ZUB</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="preload"
+      href="fonts/OpenSans-Bold.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="fonts/OpenSans-Regular.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+  </head>
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>ZUB</title>
-  <link rel="stylesheet" href="css/style.css" />
-  <link rel="preload" href="fonts/OpenSans-Bold.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="preload" href="fonts/OpenSans-Regular.woff2" as="font" type="font/woff2" crossorigin>
-</head>
+  <body class="page-body">
+    <header class="page-body__header">
+      <nav class="main-nav">
+        <div class="main-nav__wrap">
+          <div>
+            <ul class="main-nav__line">
+              <li class="main-nav__item main-nav__item--big">
+                <a
+                  class="main-nav__link main-nav__link--big"
+                  href="catalog.html"
+                  >Каталог товаров</a
+                >
+              </li>
 
-<body class="page__body">
-  <header class="page__header">
-    <nav class="main-nav">
-      <div class="main-nav__wrap">
-        <div class="main-nav__logo-wrap">
+              <li class="main-nav__item main-nav__item--big">
+                <a class="main-nav__link main-nav__link--big" href="form.html"
+                  >Вязание на заказ
+                </a>
+              </li>
+            </ul>
+            <ul class="main-nav__line">
+              <li class="main-nav__item">
+                <a class="main-nav__link main-nav__link--small" href="#"
+                  >Новые поступления</a
+                >
+              </li>
 
-          <a class="main-nav__logo">
-            <img src="">
-          </a>
+              <li class="main-nav__item">
+                <a class="main-nav__link main-nav__link--small" href="#"
+                  >Распродажа</a
+                >
+              </li>
+            </ul>
+          </div>
 
-          <ul>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="catalog.html">Каталог товаров</a>
-            </li>
+          <div class="main-nav__logo-basket">
+            <a>
+              <picture>
+                <source
+                  media="(min-width: 1150px)"
+                  srcset="img/logo-desktop.svg"
+                />
+                <source
+                  media="(min-width: 772px)"
+                  srcset="img/logo-tablet.svg"
+                />
+                <img src="img/logo-mobile.svg" alt="Логотип компании" />
+              </picture>
+            </a>
 
-            <li class="main-nav__item">
-              <a class="main-nav__link " href="form.html">Вязание на заказ </a>
-            </li>
+            <ul>
+              <li class="main-nav__item main-nav__item--basket">
+                <img src="" />
+                <a class="main-nav__link main-nav__link--big" href="#"
+                  >Корзина: пока пуста</a
+                >
+              </li>
 
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="#">Новые поступления</a>
-            </li>
-
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="#">Распродажа</a>
-            </li>
-          </ul>
-
-          <ul>
-            <li>
-              <a>
-                <img src="">
-              </a>
-            </li>
-            <li class="main-nav__item">
-              <img src="">
-              <a class="main-nav__link main-nav__link--index" href="#">Корзина: пока пуста</a>
-            </li>
-
-            <li>
-              <span>Бесплатная доставка по России</span>
-            </li>
-          </ul>
+              <li class="main-nav__item main-nav__item--basket">
+                <span class="main-nav__link main-nav__link--span"
+                  >Бесплатная доставка по России</span
+                >
+              </li>
+            </ul>
+          </div>
 
           <button class="main-nav__toggle main-nav__toggle--nojs" type="button">
             <span class="visually-hidden">Открыть меню</span>
           </button>
-
         </div>
-    </nav>
+      </nav>
+    </header>
 
-  </header>
-
-  <main>
-    <div>
-      <h1>Милые штуки ручной работы для дома</h1>
-
-      <a>
-        <span>Предметы интерьера</span>
-       <img src="">
-      </a>
-
-
-      <a>
-        <span>Детские игрушки</span>
-       <img src="">
-      </a>
-
-
-      <img src="">
-
-    </div>
-
-    <div>
-      <h2> Вязанные корзинки</h2>
-      <span>Товар недели</span>
-    </div>
-
-    <div>
+    <main>
       <div>
-        <p>Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
-        <table>
-          <tbody>
-            <tr>
-              <td>Цвет:</td>
-              <td>«Тиффани»/серый</td>
-            </tr>
-            <tr>
-              <td>Диаметр:</td>
-              <td>25 см</td>
-            </tr>
-            <tr>
-              <td>Цвет:</td>
-              <td>15 см</td>
-            </tr>
-          </tbody>
-        </table>
-        <span>Цена: 990 руб.</span>
+        <h1>Милые штуки ручной работы для дома</h1>
+
         <a>
-          Заказать
+          <span>Предметы интерьера</span>
+          <img src="" />
         </a>
+
+        <a>
+          <span>Детские игрушки</span>
+          <img src="" />
+        </a>
+
+        <img src="" />
       </div>
-      <img>
-    </div>
 
-
-    <div>
-      <h2>Коротко о нас:</h2>
-      <ul>
-        <li>Экологически чистые материалы</li>
-        <li>Связано вручную с любовью и умилением</li>
-        <li>Скандинавский стиль по российской цене</li>
-        <li>Поддержка отечественного производителя</li>
-        <li>Увеличивает лайки на фотографиях</li>
-        <li>Поставляется в подарочной упаковке</li>
-      </ul>
-    </div>
-
-    <div>
       <div>
-        <h2>Отзывы</h2>
-        <p>Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как
-          у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали
-          более стильными, а также набирают больше лайков!</p>
-        <span>Анастасия Красильникова</span>
-        <span>@misssssiskras</span>
+        <h2>Вязанные корзинки</h2>
+        <span>Товар недели</span>
       </div>
+
       <div>
-        <a href="#">Написать</a>
-        <a></a>
-        <a></a>
+        <div>
+          <p>
+            Экологически чистая пряжа, ручная работа. Доступны в шести
+            расцветках, и трех размерах.
+          </p>
+          <table>
+            <tbody>
+              <tr>
+                <td>Цвет:</td>
+                <td>«Тиффани»/серый</td>
+              </tr>
+              <tr>
+                <td>Диаметр:</td>
+                <td>25 см</td>
+              </tr>
+              <tr>
+                <td>Цвет:</td>
+                <td>15 см</td>
+              </tr>
+            </tbody>
+          </table>
+          <span>Цена: 990 руб.</span>
+          <a> Заказать </a>
+        </div>
+        <img />
       </div>
-    </div>
 
-    <div>
       <div>
-        <h2>Контакты</h2>
-        <table>
-          <tbody>
-            <tr>
-              <td>e-mail: </td>
-              <td>info@mimimishkashop.ru</td>
-            </tr>
-            <tr>
-              <td>адрес:</td>
-              <td>г. Санкт-Петербург <br> ул. Большая Конюшенная <br> д. 19/8, офис 101</td>
-            </tr>
-            <tr>
-              <td>Цвет:</td>
-              <td>15 см</td>
-            </tr>
-          </tbody>
-        </table>
+        <h2>Коротко о нас:</h2>
+        <ul>
+          <li>Экологически чистые материалы</li>
+          <li>Связано вручную с любовью и умилением</li>
+          <li>Скандинавский стиль по российской цене</li>
+          <li>Поддержка отечественного производителя</li>
+          <li>Увеличивает лайки на фотографиях</li>
+          <li>Поставляется в подарочной упаковке</li>
+        </ul>
       </div>
-      <a>Напишите нам</a>
 
-      <iframe></iframe>
-    </div>
-  </main>
-
-  <footer>
-    <div>
-
-      <img>
-
-      <ul>
-        <li> 
+      <div>
+        <div>
+          <h2>Отзывы</h2>
+          <p>
+            Я молодая мама, но всё равно фотографии не набирали и близко такого
+            количества лайков, как у популярных инстамамочек. В отчаянии, я
+            накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали
+            более стильными, а также набирают больше лайков!
+          </p>
+          <span>Анастасия Красильникова</span>
+          <span>@misssssiskras</span>
+        </div>
+        <div>
+          <a href="#">Написать</a>
           <a></a>
-        </li>
-        <li>
-           <a></a>
+          <a></a>
+        </div>
+      </div>
+
+      <div>
+        <div>
+          <h2>Контакты</h2>
+          <table>
+            <tbody>
+              <tr>
+                <td>e-mail:</td>
+                <td>info@mimimishkashop.ru</td>
+              </tr>
+              <tr>
+                <td>адрес:</td>
+                <td>
+                  г. Санкт-Петербург <br />
+                  ул. Большая Конюшенная <br />
+                  д. 19/8, офис 101
+                </td>
+              </tr>
+              <tr>
+                <td>Цвет:</td>
+                <td>15 см</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <a>Напишите нам</a>
+
+        <!--  <iframe></iframe>-->
+      </div>
+    </main>
+
+    <footer>
+      <div>
+        <img />
+
+        <ul>
+          <li>
+            <a></a>
           </li>
-        <li> 
-          <a></a>
-        </li>
-
-      </ul>
-      <ul>
-        <li>
-          Разработано
-        </li>
-        <li>
-
-        </li>
-      </ul>
-    </div>
-  </footer>
-</body>
+          <li>
+            <a></a>
+          </li>
+          <li>
+            <a></a>
+          </li>
+        </ul>
+        <ul>
+          <li>Разработано</li>
+          <li></li>
+        </ul>
+      </div>
+    </footer>
+  </body>
 </html>
