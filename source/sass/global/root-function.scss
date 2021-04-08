@@ -1,6 +1,12 @@
-$mobile-max: 320px;
-$tablet-max: 772px;
-$desktop-max: 1150px;
+$mobile: 320px;
+$mobile-max: 771px;
+$tablet-min: 772px;
+$tablet-max: 1149px;
+$desktop: 1150px;
+
+//@media (min-width: $desktop)
+//@media (min-width: $tablet-min) and (max-width: $tablet-max)
+//@media (min-width: $mobile) and (max-width: $mobile-max)
 
 $basic-white: #ffffff;
 $basic-grey: #f1f1f1;
@@ -13,7 +19,9 @@ $green: #56c3b2;
 $dark-green: #149080;
 $light-green-form: #62d1ba;
 $green-link: #46c1ae;
+$grey-background: #fbfbfb;
 
+$black-opacity1: rgba(0, 0, 0, 0.1);
 $black-opacity2: rgba(0, 0, 0, 0.2);
 $black-opacity3: rgba(0, 0, 0, 0.3);
 $black-opacity6: rgba(0, 0, 0, 0.6);

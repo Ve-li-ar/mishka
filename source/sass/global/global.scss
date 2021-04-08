@@ -7,7 +7,7 @@
 }
 
 img {
-  max-width: 100%;
+  width: 100%;
 }
 
 a {
@@ -36,16 +36,22 @@ fieldset {
   border: 0;
 }
 
-.page-body {
-  @media (max-width: $desktop-max) {
+.container {
+  margin: 0 auto;
+
+  @media (min-width: $desktop) {
     width: 1050px;
   }
 
-  @media (max-width: $tablet-max) {
+  @media (min-width: $tablet-min) and (max-width: $tablet-max) {
     width: 672px;
   }
 
-  @media (max-width: $mobile-max) {
+  @media (min-width: $mobile) and (max-width: $mobile-max) {
     width: 260px;
   }
+}
+
+.page-body__main {
+  position: relative;
 }
