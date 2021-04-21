@@ -1,91 +1,70 @@
 .first-screen {
   background-color: $grey-background;
-  position: relative;
-  background-position: center;
+  margin-top: -59px;
+  width: 100vw;
+  height: 770px;
+  background-image: url(../img/hero-desktop.png);
+  background-position: center top;
   background-repeat: no-repeat;
+  background-size: cover 770px;
+  position: relative;
 
-  @media (min-width: $desktop) {
-    min-height: 746px;
-    background-image: url(../img/hero-desktop.png);
-    background-size: 1150px 746px;
-    position: relative;
-    top: -59px;
-    @media (min-resolution: 2dppx) {
-      background-image: url(../img/hero-desktop@2x.png);
-    }
+  @media (max-width: $mobile) {
+    margin-top: 0;
   }
+}
 
-  @media (min-width: $tablet-min) and (max-width: $tablet-max) {
-    background-image: url(../img/hero-tablet.png);
-    background-size: 770px 745px;
-    min-height: 746px;
+.first-screen__description {
+  position: relative;
 
-    @media (min-resolution: 2dppx) {
-      background-image: url(../img/hero-tablet@2x.png);
-    }
-  }
+  &::after {
+    content: "";
+    top: auto;
+    bottom: -450px;
+    left: 0;
+    width: 100%;
+    height: 24px;
+    background: url("../img/zigzag-fill.svg") repeat-x;
+    background-size: 768px 26px;
+    position: absolute;
 
-  @media (min-width: $mobile) and (max-width: $mobile-max) {
-    background-image: url(../img/hero-mobile.png);
-    background-repeat: no-repeat;
-    background-size: 320px 373px;
-    min-height: 506px;
-    background-position: center 0;
-
-    @media (min-resolution: 2dppx) {
-      background-image: url(../img/hero-mobile@2x.png);
+    @media (max-width: $tablet) {
+      bottom: -452px;
     }
   }
 }
 
 .first-screen__caption {
   text-align: center;
-
-  @media (min-width: $desktop) {
-    font-weight: 700;
-    font-size: 53px;
-    padding-top: 175px;
-  }
-
-  @media (min-width: $tablet-min) and (max-width: $tablet-max) {
-    padding-top: 175px;
-  }
-
-  @media (min-width: $mobile) and (max-width: $mobile-max) {
-    padding-top: 80px;
-  }
+  font-weight: 700;
+  font-size: 53px;
+  padding-top: 175px;
+  margin: 0;
 }
 
 .first-screen__blocks {
   display: flex;
   background-repeat: no-repeat;
+  padding-top: 330px;
+  margin: 0 auto;
 
-  @media (min-width: $desktop) {
-    padding-top: 330px;
-    margin: 0 auto;
-    width: 1050px;
-  }
-
-  @media (min-width: $tablet-min) and (max-width: $tablet-max) {
-    padding-top: 400px;
-    margin: 0 auto;
-    width: 672px;
-  }
-
-  @media (min-width: $mobile) and (max-width: $mobile-max) {
-    flex-direction: column;
-    padding-top: 110px;
+  @media (max-width: $tablet) {
+    padding-top: 290px;
   }
 }
 
 .first-screen__block {
   display: inline-block;
-
   color: $basic-white;
   font-weight: 700;
   font-size: 20px;
   font-family: $OpenSans;
   line-height: 30px;
+  width: 45.6vw;
+
+  padding-top: 25px;
+  padding-bottom: 34px;
+  padding-left: 37px;
 
   &--first {
     background-color: $light-green;
@@ -94,34 +73,7 @@
     background-color: $green;
   }
 
-  @media (min-width: $desktop) {
-    min-width: 525px;
-    padding: 25px 350px 34px 37px;
-  }
-
-  @media (min-width: $tablet-min) and (max-width: $tablet-max) {
-    min-width: 334px;
-    min-height: 120px;
-    padding: 25px 350px 34px 37px;
-    padding-right: 167px;
-  }
-
-  @media (min-width: $mobile) and (max-width: $mobile-max) {
-    display: block;
-    min-width: 320px;
-    padding: 25px 160px 31px 30px;
-    margin: 0 auto;
-  }
-}
-
-.first-screen__svg {
-  position: absolute;
-  bottom: -6px;
-  z-index: 9;
-  top: auto;
-  width: 100%;
-
-  @media (min-width: $mobile) and (max-width: $mobile-max) {
-    display: none;
+  @media (max-width: 772px) {
+    padding: 35px 187px 35px 35px;
   }
 }

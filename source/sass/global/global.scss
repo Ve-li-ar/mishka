@@ -38,20 +38,9 @@ fieldset {
 
 .container {
   margin: 0 auto;
+  width: 91.3vw;
 
-  @media (min-width: $desktop) {
-    width: 1050px;
+  @media (max-width: $tablet) {
+    width: 87vw;
   }
-
-  @media (min-width: $tablet-min) and (max-width: $tablet-max) {
-    width: 672px;
-  }
-
-  @media (min-width: $mobile) and (max-width: $mobile-max) {
-    width: 260px;
-  }
-}
-
-.page-body__main {
-  position: relative;
 }

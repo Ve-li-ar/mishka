@@ -1,0 +1,75 @@
+.about-us {
+  padding-top: 80px;
+  padding-left: 9vw;
+
+  @media (max-width: $tablet) {
+    padding-left: 0;
+  }
+}
+
+.about-us__about-us {
+  margin: 0;
+  font-size: 53px;
+  font-weight: 700;
+  font-family: $OpenSans;
+
+  @media (max-width: $tablet) {
+    font-size: 43px;
+  }
+}
+
+.about-us__item {
+  font-size: 20px;
+  line-height: 22px;
+  font-weight: 700;
+  padding-top: 110px;
+  background-repeat: no-repeat;
+  background-position: 0 60px;
+  width: 31vw;
+
+  &:nth-child(2n) {
+    margin-right: 0;
+  }
+
+  &--material {
+    background-image: url(../img/icon-1.svg);
+  }
+
+  &--price {
+    background-image: url(../img/icon-2.svg);
+  }
+
+  &--like {
+    background-image: url(../img/icon-3.svg);
+  }
+
+  &--hand-made {
+    background-image: url(../img/icon-4.svg);
+  }
+
+  &--support {
+    background-image: url(../img/icon-5.svg);
+  }
+
+  &--gift {
+    background-image: url(../img/icon-6.svg);
+  }
+
+  @media (max-width: $tablet) {
+    margin-right: 0;
+    width: 42vw;
+  }
+}
+
+.about-us__list ul {
+  padding-left: 0;
+  margin: 0;
+  display: flex;
+  padding-bottom: 90px;
+  justify-content: start;
+  flex-wrap: wrap;
+
+  @media (max-width: $tablet) {
+    flex-direction: row;
+  }
+}

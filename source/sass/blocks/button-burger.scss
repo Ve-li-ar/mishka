@@ -2,7 +2,7 @@
   display: none;
 }
 
-@media (min-width: $mobile) and (max-width: $mobile-max) {
+@media (max-width: $mobile) {
   .button-burger {
     z-index: 2;
     display: block;
