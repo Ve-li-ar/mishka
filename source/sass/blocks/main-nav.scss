@@ -13,58 +13,12 @@
   flex-wrap: wrap;
   justify-content: space-between;
   z-index: 2;
-}
+  width: 1050px;
+  margin: 0 auto;
 
-@media (max-width: $tablet) {
-  .main-nav__list-children:nth-child(2) {
-    order: 1;
-  }
-
-  .main-nav__list-children:nth-child(3) {
-    order: 2;
-  }
-
-  .main-nav__list-children:nth-child(1) {
-    order: 3;
-  }
-
-  .main-nav__list-children:nth-child(5) {
-    order: 4;
-  }
-}
-
-// .main-nav__list-children {
-//   @media (max-width: $mobile) {
-//     display: flex;
-//     margin: 0 auto;
-//     align-items: center;
-//     flex-direction: column;
-
-//     .main-nav__list-children:nth-child(2) {
-//       order: 1;
-//     }
-
-//     .main-nav__list-children:nth-child(3) {
-//       order: 3;
-//     }
-
-//     .main-nav__list-children:nth-child(1) {
-//       order: 2;
-//     }
-
-//     .main-nav__list-children:nth-child(5) {
-//       display: none;
-//     }
-//   }
-
-.main-nav__img {
-  width: 149px;
-  height: 72px;
-
-  @media (max-width: $tablet) {
-    width: 113px;
-    height: 46px;
-    margin: auto 0;
+  @media (max-width: $mobile) {
+    width: 260px;
+    flex-direction: column;
   }
 }
 
@@ -76,38 +30,10 @@
   &--notpadding {
     padding-right: 0;
   }
-}
 
-.main-nav__list-children {
-  padding-left: 0;
-  padding-right: 35px;
-
-  display: flex;
-
-  &--last {
-    padding-right: 0;
+  @media (max-width: $mobile) {
+    flex-direction: column;
   }
-
-  &--search {
-    display: flex;
-    flex-direction: row;
-  }
-
-  &--delete {
-    @media (max-width: $mobile) {
-      display: none;
-    }
-  }
-
-  &--delete-tablet {
-    @media (max-width: $tablet) {
-      display: none;
-    }
-  }
-}
-
-.main-nav__toggle {
-  display: none;
 }
 
 .main-nav__link {
@@ -141,16 +67,129 @@
   }
 }
 
+@media (max-width: $tablet) {
+  .main-nav__list-children:nth-child(2) {
+    order: 1;
+  }
+
+  .main-nav__list-children:nth-child(3) {
+    order: 2;
+  }
+
+  .main-nav__list-children:nth-child(1) {
+    order: 3;
+  }
+
+  .main-nav__list-children:nth-child(5) {
+    order: 4;
+  }
+}
+
+@media (max-width: $mobile) {
+  .main-nav__list-children:nth-child(2) {
+    order: 1;
+  }
+
+  .main-nav__list-children:nth-child(3) {
+    order: 3;
+  }
+
+  .main-nav__list-children:nth-child(1) {
+    order: 2;
+  }
+
+  .main-nav__list-children:nth-child(5) {
+    display: none;
+  }
+}
+
+.main-nav__list-children {
+  padding-left: 0;
+  padding-right: 35px;
+  display: flex;
+
+  &--last {
+    padding-right: 0;
+  }
+
+  &--search {
+    display: flex;
+    flex-direction: row;
+  }
+
+  &--delete-first {
+    @media (max-width: $tablet) {
+      display: none;
+    }
+  }
+
+  @media (max-width: $mobile) {
+    flex-direction: column;
+    padding-right: 0;
+    margin: 0 auto;
+
+    &--delete-second {
+      display: none;
+    }
+
+    &--logo {
+      margin: 0 auto;
+    }
+  }
+}
+
+@media (max-width: $mobile) {
+  .main-nav__item-svg {
+    margin-right: 10px;
+  }
+}
+
+.search-visually-hidden {
+  display: none;
+
+  @media (max-width: $mobile) {
+    display: block;
+  }
+}
+
+.main-nav__img {
+  width: 149px;
+  height: 72px;
+  display: block;
+
+  @media (max-width: $tablet) {
+    width: 113px;
+    height: 46px;
+    margin: auto 0;
+  }
+
+  @media (max-width: $mobile) {
+    width: 86px;
+    height: 36px;
+  }
+}
+
+.main-nav__toggle {
+  display: none;
+}
+
 .main-nav__item {
   display: block;
   padding-top: 33px;
-  padding-bottom: 20px;
+
+  @media (max-width: $mobile) {
+    margin: 0 auto;
+  }
 
   &--border {
     border-right: 1px solid $black-opacity1;
     padding-right: 32px;
     font-weight: 700;
     font-size: 17px;
+
+    @media (max-width: $mobile) {
+      border: none;
+    }
   }
 
   &--noborder {
@@ -168,21 +207,25 @@
   &--search {
     border-left: 1px solid $black-opacity1;
     padding: 33px 33px;
+
+    @media (max-width: $mobile) {
+      display: flex;
+      flex-direction: row;
+      border: none;
+      width: 100%;
+    }
   }
 
   &--product {
     padding-right: 60px;
     padding-top: 20px;
   }
-}
 
-// .main-nav__logo-basket {
-//   @media (max-width: $desktop-max) {
-//     display: flex;
-//     justify-content: space-between;
-//     width: 100%;
-//   }
-// }
+  @media (max-width: $mobile) {
+    padding: 27px 0;
+    border: none;
+  }
+}
 
 .main-nav__svg {
   margin-right: 10px;

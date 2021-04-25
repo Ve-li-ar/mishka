@@ -15,7 +15,7 @@
     <nav class="main-nav">
       <div class="main-nav__wrap">
         <div class="main-nav__list">
-          <ul class="main-nav__line main-nav__list-children  main-nav__list-children--delete main-nav__line--notpadding">
+          <ul class="main-nav__line main-nav__list-children main-nav__line--notpadding">
             <li class="main-nav__item main-nav__item--big main-nav__item--border">
               <a class="main-nav__link main-nav__link--big" href="catalog.html">Каталог товаров</a>
             </li>
@@ -26,7 +26,7 @@
             </li>
           </ul>
 
-          <a class="main-nav__list-children">
+          <a class="main-nav__list-children main-nav__list-children--logo">
             <picture>
               <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg" />
               <source media="(min-width: 772px)" srcset="img/logo-tablet.svg" />
@@ -34,15 +34,15 @@
             </picture>
           </a>
 
-          <ul class="main-nav__list-children main-nav__list-children--last main-nav__list-children--delete main-nav__list-children--search">
-            <li class="main-nav__item main-nav__item--search">
-              <svg width="18" height="18" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
+          <ul class="main-nav__list-children main-nav__list-children--last main-nav__list-children--delete  main-nav__list-children--search">
+            <li class="main-nav__item main-nav__item--search ">
+              <svg class="main-nav__item-svg" width="18" height="18" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
                 <path opacity="0.2"
                   d="M17.6932 16.0568L14.2159 12.5795C15.2386 11.25 15.75 9.61364 15.75 7.875C15.75 3.47727 12.2727 0 7.875 0C3.47727 0 0 3.47727 0 7.875C0 12.2727 3.47727 15.75 7.875 15.75C9.61364 15.75 11.25 15.1364 12.5795 14.2159L16.0568 17.6932C16.2614 17.8977 16.4659 18 16.875 18C17.4886 18 18 17.4886 18 16.875C18 16.6705 17.8977 16.3636 17.6932 16.0568ZM2.25 7.875C2.25 4.80682 4.80682 2.25 7.875 2.25C10.9432 2.25 13.5 4.80682 13.5 7.875C13.5 10.9432 10.9432 13.5 7.875 13.5C4.80682 13.5 2.25 10.9432 2.25 7.875Z"
                   fill="black" />
               </svg>
 
-              <span class="visually-hidden">Поиск по сайту</span>
+              <span class="search-visually-hidden">Поиск по сайту</span>
             </li>
             <li class="main-nav__item main-nav__link--big main-nav__item--basket">
               <svg class="main-nav__svg" width="21" height="18" viewBox="0 0 21 18" xmlns="http://www.w3.org/2000/svg">
@@ -55,9 +55,9 @@
             </li>
           </ul>
 
-          <ul class="main-nav__list-children main-nav__list-children--delete main-nav__list-children--delete-tablet">
+          <ul class="main-nav__list-children main-nav__list-children--delete-first">
             <li class="main-nav__item main-nav__item--product">
-              <a class="main-nav__link main-nav__link--small" href="#">Новые поступvvления</a>
+              <a class="main-nav__link main-nav__link--small" href="#">Новые поступления</a>
             </li>
 
             <li class="main-nav__item main-nav__item--product">
@@ -65,7 +65,7 @@
             </li>
           </ul>
 
-          <div class="main-nav__link main-nav__link--span  main-nav__list-children--delete main-nav__list-children main-nav__list-children--last">
+          <div class="main-nav__link main-nav__link--span  main-nav__list-children--delete-second main-nav__list-children main-nav__list-children--last">
             Бесплатная доставка по России
           </div>
         </div>
