@@ -139,119 +139,133 @@
       </nav>
     </header>
 
-    <main>
-      <form action="https://echo.htmlacademy.ru" method="GET">
-        <h1>Вязание на заказ</h1>
-        <p>
-          Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую
-          форму заказа и мы свяжемся с вами, чтобы уточнить детали.
-        </p>
-        <fieldset>
-          <legend>
-            <span>Тип</span>
-          </legend>
-          <label>
-            <input type="radio" />
-            <span>Аксессуар для интерьера</span>
-          </label>
-          <label>
-            <input type="radio" />
-            <span>Детская игрушка</span>
-          </label>
-        </fieldset>
-        <fieldset>
-          <legend>
-            <span>Цвет</span>
-          </legend>
-          <label>
-            <input checked="checked" type="checkbox" />
-            <span tabindex="0">Белый</span>
-          </label>
-          <label>
-            <input checked="checked" type="checkbox" />
-            <span tabindex="0">Серый</span>
-          </label>
-          <label>
-            <input type="checkbox" />
-            <span tabindex="0">«Тиффани»</span>
-          </label>
-          <label>
-            <input type="checkbox" />
-            <span tabindex="0">Черный</span>
-          </label>
-          <label>
-            <input type="checkbox" />
-            <span tabindex="0">Розовый</span>
-          </label>
-          <label>
-            <input type="checkbox" />
-            <span tabindex="0">Оранжевый</span>
-          </label>
-        </fieldset>
-
-        <fieldset>
-          <legend>ФИО</legend>
-          <label>
-            <span>Имя</span>
-            <input
-              placeholder="Введите ваше имя*"
-              aria-label="Заполнить графу об имени"
+    <main class="page-body__main catalog">
+      <h1 class="catalog__caption">Каталог товаров</h1>
+      <ul class="catalog__list container">
+        <li class="catalog__item">
+          <picture>
+            <source
+              media="(min-width: 1150px)"
+              srcset="img/card-product-1-desktop.png"
             />
-          </label>
-          <label>
-            <span>Имя</span>
-            <input
-              placeholder="Введите вашу фамилию*"
-              aria-label="Заполнить графу фамилия"
+            <source
+              media="(min-width: 772px)"
+              srcset="img/card-product-1-tablet.png"
             />
-          </label>
-          <label>
-            <span>Имя</span>
-            <input
-              placeholder="Отчество, если желаете"
-              aria-label="Заполнить графу об отчестве"
+            <img
+              src="img/card-product-1-mobile.png"
+              alt="Логотип компании"
+              class="catalog__img"
+              width="260"
+              height="195"
             />
-          </label>
-        </fieldset>
+          </picture>
+          <div class="catalog__card-text">
+            <h2>Зайчик-попрыгайчик</h2>
+            <p>Рост 30 см, вес 200 г</p>
+            <ul class="catalog__price">
+              <li>1 200 руб.</li>
+              <li>
+                <svg
+                  class="main-nav__svg"
+                  width="21"
+                  height="18"
+                  viewBox="0 0 21 18"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    opacity="0.2"
+                    d="M20.1884 6.85716H16.6377L13.1884 0.380944C12.9855 -8.61287e-06 12.5797 -0.0952351 12.1739 0.0952412C11.7681 0.285717 11.6667 0.66667 11.8696 1.04762L15.0145 6.85716H5.7826L8.92753 1.04762C9.13043 0.66667 8.92754 0.285717 8.6232 0.0952412C8.2174 -0.0952351 7.8116 0.0952295 7.6087 0.380944L4.1594 6.85716H0.811583C0.405785 6.85716 0 7.14286 0 7.61905C0 8 0.304336 8.38094 0.811583 8.38094H1.01449L1.92753 11.2381C1.72463 11.3333 1.62317 11.5238 1.62317 11.8095C1.62317 12.1905 1.92753 12.4762 2.33332 12.4762L4.05797 18H16.942L18.6667 12.4762C19.0725 12.4762 19.3768 12.1905 19.3768 11.8095C19.3768 11.619 19.2754 11.3333 19.0725 11.2381L19.9855 8.38094H20.1884C20.5942 8.38094 21 8.09524 21 7.61905C21 7.14286 20.5942 6.85716 20.1884 6.85716ZM15.6232 16.4762H5.07247L3.85506 12.381H16.942L15.6232 16.4762ZM17.2464 10.9524H3.34782L2.53623 8.28573H18.058L17.2464 10.9524Z"
+                    fill="black"
+                  />
+                </svg>
+              </li>
+            </ul>
+          </div>
+        </li>
 
-        <fieldset>
-          <label>
-            <span>Тел</span>
-            <div>
-              <input
-                placeholder="+7 ХХХ ХХХ ХХ ХХ*"
-                aria-label="Заполнить графу о номере телефона"
-              />
-              <img />
-            </div>
-          </label>
-          <label>
-            <span>E-mail</span>
-            <div>
-              <input
-                placeholder="Ваш Email"
-                aria-label="Заполнить графу эмейл"
-              />
-              <img />
-            </div>
-          </label>
-        </fieldset>
+        <li class="catalog__item">
+          <picture>
+            <source
+              media="(min-width: 1150px)"
+              srcset="img/card-product-2-desktop.png"
+            />
+            <source
+              media="(min-width: 772px)"
+              srcset="img/card-product-2-tablet.png"
+            />
+            <img
+              src="img/card-product-2-mobile.png"
+              alt="Логотип компании"
+              class="catalog__img"
+              width="260"
+              height="195"
+            />
+          </picture>
+          <div class="catalog__card-text">
+          <h2>Корзинка для белья</h2>
+          <p>Диаметр 15 см, высота 10 см</p>
+          <ul class="catalog__price">
+            <li>690 руб.</li>
+            <li>
+              <svg
+                class="main-nav__svg"
+                width="21"
+                height="18"
+                viewBox="0 0 21 18"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  opacity="0.2"
+                  d="M20.1884 6.85716H16.6377L13.1884 0.380944C12.9855 -8.61287e-06 12.5797 -0.0952351 12.1739 0.0952412C11.7681 0.285717 11.6667 0.66667 11.8696 1.04762L15.0145 6.85716H5.7826L8.92753 1.04762C9.13043 0.66667 8.92754 0.285717 8.6232 0.0952412C8.2174 -0.0952351 7.8116 0.0952295 7.6087 0.380944L4.1594 6.85716H0.811583C0.405785 6.85716 0 7.14286 0 7.61905C0 8 0.304336 8.38094 0.811583 8.38094H1.01449L1.92753 11.2381C1.72463 11.3333 1.62317 11.5238 1.62317 11.8095C1.62317 12.1905 1.92753 12.4762 2.33332 12.4762L4.05797 18H16.942L18.6667 12.4762C19.0725 12.4762 19.3768 12.1905 19.3768 11.8095C19.3768 11.619 19.2754 11.3333 19.0725 11.2381L19.9855 8.38094H20.1884C20.5942 8.38094 21 8.09524 21 7.61905C21 7.14286 20.5942 6.85716 20.1884 6.85716ZM15.6232 16.4762H5.07247L3.85506 12.381H16.942L15.6232 16.4762ZM17.2464 10.9524H3.34782L2.53623 8.28573H18.058L17.2464 10.9524Z"
+                  fill="black"
+                />
+              </svg>
+            </li>
+          </ul></div>
+        </li>
 
-        <fieldset>
-          <legend>Доп</legend>
-          <textarea
-            rows="3"
-            cols="37"
-            placeholder="Опишите все ваши пожелания к заказу"
-          >
-          </textarea>
-        </fieldset>
-
-        <div class="button-span">
-          <button type="submit">Отправить заказ</button>
-          <span class="form-span">*Поля обязательны для заполнения</span>
-        </div>
-      </form>
+        <li class="catalog__item">
+          <picture>
+            <source
+              media="(min-width: 1150px)"
+              srcset="img/card-product-3-desktop.png"
+            />
+            <source
+              media="(min-width: 772px)"
+              srcset="img/card-product-3-tablet.png"
+            />
+            <img
+              src="img/card-product-3-mobile.png"
+              alt="Логотип компании"
+              class="catalog__img"
+              width="260"
+              height="195"
+            />
+          </picture>
+          <div class="catalog__card-text">
+          <h2>Большая корзинка для игрушек</h2>
+          <p>Диаметр 30 см, высота 30 см</p>
+          <ul class="catalog__price">
+            <li>1 500 руб.</li>
+            <li>
+              <svg
+                class="main-nav__svg"
+                width="21"
+                height="18"
+                viewBox="0 0 21 18"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  opacity="0.2"
+                  d="M20.1884 6.85716H16.6377L13.1884 0.380944C12.9855 -8.61287e-06 12.5797 -0.0952351 12.1739 0.0952412C11.7681 0.285717 11.6667 0.66667 11.8696 1.04762L15.0145 6.85716H5.7826L8.92753 1.04762C9.13043 0.66667 8.92754 0.285717 8.6232 0.0952412C8.2174 -0.0952351 7.8116 0.0952295 7.6087 0.380944L4.1594 6.85716H0.811583C0.405785 6.85716 0 7.14286 0 7.61905C0 8 0.304336 8.38094 0.811583 8.38094H1.01449L1.92753 11.2381C1.72463 11.3333 1.62317 11.5238 1.62317 11.8095C1.62317 12.1905 1.92753 12.4762 2.33332 12.4762L4.05797 18H16.942L18.6667 12.4762C19.0725 12.4762 19.3768 12.1905 19.3768 11.8095C19.3768 11.619 19.2754 11.3333 19.0725 11.2381L19.9855 8.38094H20.1884C20.5942 8.38094 21 8.09524 21 7.61905C21 7.14286 20.5942 6.85716 20.1884 6.85716ZM15.6232 16.4762H5.07247L3.85506 12.381H16.942L15.6232 16.4762ZM17.2464 10.9524H3.34782L2.53623 8.28573H18.058L17.2464 10.9524Z"
+                  fill="black"
+                />
+              </svg>
+            </li>
+          </ul>
+        </li>
+      </ul></div>
     </main>
 
     <footer class="page-body__footer">

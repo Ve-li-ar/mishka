@@ -6,10 +6,6 @@
   font-family: $OpenSans;
 }
 
-img {
-  width: 100%;
-}
-
 a {
   text-decoration: none;
 }
@@ -34,13 +30,4 @@ fieldset {
   margin: 0;
   padding: 0;
   border: 0;
-}
-
-.container {
-  margin: 0 auto;
-  width: 91.3vw;
-
-  @media (max-width: $tablet) {
-    width: 87vw;
-  }
 }

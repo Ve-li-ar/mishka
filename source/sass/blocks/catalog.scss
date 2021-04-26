@@ -1,0 +1,50 @@
+.catalog__caption {
+  font-size: 53px;
+  line-height: 57px;
+  text-align: center;
+  background-color: $basic-grey;
+  margin: 0;
+  padding-top: 102px;
+  padding-bottom: 79px;
+  margin-top: -102px;
+  background-image: url(../img/zigzag-fill.svg);
+  background-repeat: repeat no-repeat;
+  background-position: center bottom;
+}
+
+.catalog__img {
+  width: 326px;
+  height: 462px;
+
+  @media (max-width: $tablet) {
+    width: 334px;
+    width: 334px;
+  }
+
+  @media (max-width: $mobile) {
+    width: 260px;
+    height: 195px;
+  }
+}
+
+.catalog__list {
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;
+  padding-left: 0;
+  justify-content: space-between;
+}
+
+.catalog__item {
+  padding-right: 22px;
+}
+
+.catalog__price {
+  padding-left: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.catalog__card-text {
+  padding: 20px;
+}

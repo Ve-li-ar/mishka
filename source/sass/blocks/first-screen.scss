@@ -10,7 +10,10 @@
   position: relative;
 
   @media (max-width: $mobile) {
-    margin-top: 0;
+    background-size: 320px 350px;
+    width: 320px;
+    height: 350px;
+    margin: 0 auto;
   }
 }
 
@@ -40,6 +43,12 @@
   font-size: 53px;
   padding-top: 175px;
   margin: 0;
+
+  @media (max-width: $mobile) {
+    font-size: 27px;
+    line-height: 30px;
+    padding-top: 73px;
+  }
 }
 
 .first-screen__blocks {
@@ -51,6 +60,12 @@
   @media (max-width: $tablet) {
     padding-top: 290px;
   }
+
+  @media (max-width: $mobile) {
+    font-size: 19px;
+    line-height: 24px;
+    padding-top: 120px;
+  }
 }
 
 .first-screen__block {
@@ -60,7 +75,7 @@
   font-size: 20px;
   font-family: $OpenSans;
   line-height: 30px;
-  width: 45.6vw;
+  width: 50%;
 
   padding-top: 25px;
   padding-bottom: 34px;
@@ -75,5 +90,9 @@
 
   @media (max-width: 772px) {
     padding: 35px 187px 35px 35px;
+  }
+
+  @media (max-width: $mobile) {
+    padding: 24px 160px 30px 30px;
   }
 }

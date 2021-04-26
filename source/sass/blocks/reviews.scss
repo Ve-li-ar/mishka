@@ -3,10 +3,12 @@
   padding-top: 80px;
   font-family: $OpenSans;
   font-size: 17px;
-  padding-left: 9vw;
+  padding-left: 105px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  background-image: url(../img/review.png);
+  background-repeat: no-repeat;
 
   @media (max-width: $tablet) {
     padding-left: 0;
@@ -16,20 +18,18 @@
 }
 
 .reviews {
-  background-image: url(../img/review.png);
-  background-repeat: no-repeat;
-  background-position: top left;
   position: relative;
   padding-bottom: 60px;
-  margin-left: 4.35vw;
-  margin-right: 4.35vw;
+  margin-right: 50px;
+  margin-left: 50px;
 
   @media (max-width: $tablet) {
     margin: 0;
   }
   &::after {
     content: "";
-    width: 91vw;
+    width: 100%;
+    background-repeat: repeat;
     height: 23px;
     background-image: url(../img/zigzag-line.svg);
     z-index: 2;
