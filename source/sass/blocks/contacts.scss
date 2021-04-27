@@ -20,7 +20,7 @@
     content: "";
     width: 47px;
     height: 81px;
-    background-image: url(../img/flag.svg);
+    background-image: url("../img/flag.svg");
     background-repeat: no-repeat;
     z-index: 2;
     position: absolute;
@@ -61,6 +61,7 @@
 
 .contacts__lists {
   padding-right: 60px;
+
   @media (max-width: $tablet) {
     display: flex;
     justify-content: space-between;

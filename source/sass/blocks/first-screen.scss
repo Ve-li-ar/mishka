@@ -3,7 +3,7 @@
   margin-top: -59px;
   width: 100vw;
   height: 770px;
-  background-image: url(../img/hero-desktop.png);
+  background-image: url("../img/hero-desktop.png");
   background-position: center top;
   background-repeat: no-repeat;
   background-size: cover 770px;
@@ -84,6 +84,7 @@
   &--first {
     background-color: $light-green;
   }
+
   &--second {
     background-color: $green;
   }

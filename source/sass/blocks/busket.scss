@@ -3,23 +3,10 @@
   position: relative;
   margin-left: 50px;
   margin-right: 50px;
-
-  &::after {
-    content: "";
-    width: 100%;
-    height: 23px;
-    background-image: url("../img/zigzag-line.svg");
-    background-size: cover 23px;
-    background-repeat: repeat-x;
-    z-index: 2;
-    display: inline-block;
-    position: absolute;
-    bottom: 0;
-  }
 }
 
 .busket-background {
-  background-image: url(../img/busket-desktop.png);
+  background-image: url("../img/busket-desktop.png");
   background-repeat: no-repeat;
   background-size: 45vw cover;
   min-height: 636px;
@@ -30,6 +17,18 @@
     min-height: 404px;
     width: 672px;
     background-position: center right;
+  }
+
+  &::after {
+    content: "";
+    width: 100%;
+    height: 23px;
+    background-image: url("../img/zigzag-line.svg");
+    background-repeat: repeat;
+    z-index: 2;
+    display: inline-block;
+    position: absolute;
+    bottom: 0;
   }
 }
 
@@ -91,9 +90,11 @@
 
 .busket__td {
   padding-bottom: 15px;
+
   &--color {
     padding-right: 60px;
   }
+
   &--diameter {
     padding-right: 28px;
   }

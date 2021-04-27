@@ -33,27 +33,27 @@
   }
 
   &--material {
-    background-image: url(../img/icon-1.svg);
+    background-image: url("../img/icon-1.svg");
   }
 
   &--hand-made {
-    background-image: url(../img/icon-2.svg);
+    background-image: url("../img/icon-2.svg");
   }
 
   &--price {
-    background-image: url(../img/icon-3.svg);
+    background-image: url("../img/icon-3.svg");
   }
 
   &--like {
-    background-image: url(../img/icon-5.svg);
+    background-image: url("../img/icon-5.svg");
   }
 
   &--support {
-    background-image: url(../img/icon-4.svg);
+    background-image: url("../img/icon-4.svg");
   }
 
   &--gift {
-    background-image: url(../img/icon-6.svg);
+    background-image: url("../img/icon-6.svg");
   }
 
   @media (max-width: $tablet) {

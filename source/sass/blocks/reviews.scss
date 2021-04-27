@@ -7,7 +7,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  background-image: url(../img/review.png);
+  background-image: url("../img/review.png");
   background-repeat: no-repeat;
 
   @media (max-width: $tablet) {
@@ -26,12 +26,13 @@
   @media (max-width: $tablet) {
     margin: 0;
   }
+
   &::after {
     content: "";
     width: 100%;
     background-repeat: repeat;
     height: 23px;
-    background-image: url(../img/zigzag-line.svg);
+    background-image: url("../img/zigzag-line.svg");
     z-index: 2;
     display: inline-block;
     position: absolute;
@@ -60,7 +61,6 @@
   font-size: 17px;
   line-height: 30px;
   font-family: $OpenSans;
-  display: block;
   width: 91.3vw;
 
   @media (max-width: $tablet) {
