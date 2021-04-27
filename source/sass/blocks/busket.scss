@@ -38,6 +38,11 @@
     width: 672px;
     background-position: center right;
   }
+
+  @media (max-width: $mobile) {
+    min-width: 320px;
+    background-position: bottom center;
+  }
 }
 
 .busket__flex {
@@ -51,6 +56,10 @@
     justify-content: space-between;
     padding-left: 0;
   }
+
+  @media (max-width: $mobile) {
+    flex-direction: column;
+  }
 }
 
 .busket__signature {
@@ -61,10 +70,18 @@
   padding-right: 23px;
   padding-top: 45px;
   padding-left: 20px;
+  width: 100px;
 
   @media (max-width: $tablet) {
     padding-right: 0;
     padding-left: 20px;
+  }
+
+  @media (max-width: $mobile) {
+    padding-top: 0;
+    width: 100%;
+    padding-left: 30px;
+    padding-right: 30px;
   }
 }
 
@@ -74,6 +91,15 @@
 
   @media (max-width: $tablet) {
     font-size: 43px;
+  }
+
+  @media (max-width: $mobile) {
+    padding-top: 50px;
+    margin: 0;
+    font-size: 25px;
+    line-height: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
   }
 }
 
@@ -88,11 +114,22 @@
   @media (max-width: $tablet) {
     margin-left: 0;
   }
+
+  @media (max-width: $mobile) {
+    width: 320px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
 }
 
 .busket__p {
   padding-bottom: 60px;
   margin: 0;
+
+  @media (max-width: $mobile) {
+    font-size: 15px;
+    line-height: 24px;
+  }
 }
 
 .busket__table {
