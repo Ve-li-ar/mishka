@@ -1,14 +1,15 @@
 .container {
   margin: 0 auto;
-  min-width: 672px;
+  min-width: 673px;
   max-width: 1050px;
 
   @media (max-width: $tablet) {
-    width: 672px;
+    min-width: 261px;
+    max-width: 672px;
   }
 
   @media (max-width: $mobile) {
-    width: 260px;
+    max-width: 260px;
     padding-left: 30px;
     padding-right: 30px;
   }

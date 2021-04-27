@@ -7,8 +7,6 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  background-image: url("../img/review.png");
-  background-repeat: no-repeat;
 
   @media (max-width: $tablet) {
     padding-left: 0;
@@ -22,6 +20,8 @@
   padding-bottom: 60px;
   margin-right: 50px;
   margin-left: 50px;
+  background-image: url("../img/review.png");
+  background-repeat: no-repeat;
 
   @media (max-width: $tablet) {
     margin: 0;
@@ -39,7 +39,6 @@
     bottom: 0;
 
     @media (max-width: $tablet) {
-      width: 100vw;
       margin-right: 0;
     }
   }

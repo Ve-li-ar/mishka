@@ -65,6 +65,7 @@
     font-size: 19px;
     line-height: 24px;
     padding-top: 120px;
+    flex-direction: column;
   }
 }
 
@@ -94,6 +95,17 @@
   }
 
   @media (max-width: $mobile) {
-    padding: 24px 160px 30px 30px;
+    padding: 24px 160px 0 30px;
+    width: 260px;
+  }
+}
+
+.first-screen__fj {
+  @media (max-width: $mobile) {
+    padding: 0;
+
+    max-width: 260px;
+    padding-left: 30px;
+    padding-right: 30px;
   }
 }
