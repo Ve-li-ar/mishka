@@ -9,7 +9,7 @@
   }
 
   @media (max-width: $mobile) {
-    max-width: 260px;
+    min-width: 260px;
     padding-left: 30px;
     padding-right: 30px;
   }

@@ -20,13 +20,6 @@
     position: absolute;
     bottom: 0;
   }
-
-  @media (max-width: $mobile) {
-    margin-top: 0;
-    &::after {
-      bottom: -840px;
-    }
-  }
 }
 
 .busket__card-flex {
@@ -55,7 +48,6 @@
 }
 
 .busket-background {
-  position: absolute;
   // background-image: url("../img/busket-desktop.png");
   // background-repeat: no-repeat;
   // background-size: 525px, cover;
@@ -157,6 +149,7 @@
     padding-right: 30px;
     display: flex;
     flex-direction: column;
+    padding-bottom: 185px;
   }
 }
 
@@ -178,12 +171,9 @@
   border-collapse: collapse;
   width: 292px;
 
-  @media (max-width: $tablet) {
-    margin-bottom: 300px;
-  }
-
   @media (max-width: $mobile) {
     width: 260px;
+    margin-bottom: 300px;
   }
 }
 
