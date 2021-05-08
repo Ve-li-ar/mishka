@@ -10,9 +10,9 @@
   position: relative;
 
   @media (max-width: $mobile) {
-    background-size: 320px 373px;
+    background-size: 320px 320px;
     width: 320px;
-    height: 520px;
+    height: 470px;
     margin: 0 auto;
   }
 }
@@ -20,7 +20,7 @@
 .first-screen__container {
   padding-left: 0;
   padding-right: 0;
-  width: 320px;
+
   margin: 0 auto;
   min-width: 673px;
   max-width: 1050px;
