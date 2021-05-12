@@ -1,6 +1,5 @@
 .first-screen {
   background-color: $grey-background;
-  margin-top: -59px;
   width: 100vw;
   height: 770px;
   background-image: url("../img/hero-desktop.png");
@@ -23,35 +22,27 @@
   padding-right: 0;
 
   margin: 0 auto;
-  min-width: 673px;
-  max-width: 1050px;
-
-  @media (max-width: $tablet) {
-    min-width: 261px;
-    max-width: 672px;
-  }
-
-  @media (max-width: $mobile) {
-    max-width: 260px;
-  }
 }
 
 .first-screen__description {
-  position: relative;
-
+  @media (max-width: $mobile) {
+    padding-left: 9.4vw;
+    padding-right: 9.4vw;
+  }
   &::after {
     content: "";
     top: auto;
-    bottom: -450px;
+    bottom: -1px;
     left: 0;
     width: 100%;
     height: 27px;
     background: url("../img/zigzag-fill.svg") repeat-x;
     background-size: 768px 26px;
     position: absolute;
+    z-index: 2;
 
-    @media (max-width: $tablet) {
-      bottom: -452px;
+    @media (max-width: $mobile) {
+      display: none;
     }
   }
 }
@@ -73,10 +64,11 @@
 .first-screen__blocks {
   display: flex;
   background-repeat: no-repeat;
-  padding-top: 330px;
+  position: absolute;
+  bottom: 0;
   margin: 0 auto;
-  padding-left: 50px;
-  padding-right: 50px;
+  padding-left: 6.5vw;
+  padding-right: 6.5vw;
 
   @media (max-width: $tablet) {
     padding-top: 290px;
@@ -99,7 +91,7 @@
   font-size: 20px;
   font-family: $OpenSans;
   line-height: 30px;
-  width: 50%;
+  width: 43vw;
 
   padding-top: 25px;
   padding-bottom: 34px;
@@ -114,7 +106,7 @@
   }
 
   @media (max-width: 772px) {
-    padding: 35px 187px 35px 35px;
+    padding: 35px 24.3vw 35px 35px;
   }
 
   @media (max-width: $mobile) {
