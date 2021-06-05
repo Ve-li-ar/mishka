@@ -24,98 +24,99 @@
   <body class="page-body">
     <header class="page-body__header">
       <nav class="main-nav">
-        <div class="main-nav__wrap main-nav__wrap--closed">
-          <div class="main-nav__underline">
-            <div class="main-nav__container">
-              <a class="main-nav__item-children main-nav__item-children--logo">
-                <picture>
-                  <source
-                    media="(min-width: 1150px)"
-                    srcset="img/logo-desktop.svg"
-                  />
-                  <source
-                    media="(min-width: 772px)"
-                    srcset="img/logo-tablet.svg"
-                  />
-                  <img
-                    src="img/logo-mobile.svg"
-                    alt="Логотип компании"
-                    class="main-nav__img"
-                    width="13"
-                    height="24"
-                  />
-                </picture>
+        <div class="main-nav__img">
+          <a class="main-nav__link">
+            <picture>
+              <source
+                media="(min-width: 1150px)"
+                srcset="img/logo-desktop.svg"
+              />
+              <source media="(min-width: 772px)" srcset="img/logo-tablet.svg" />
+              <img
+                src="img/logo-mobile.svg"
+                alt="Логотип компании"
+                class="main-nav__logo"
+                width="86"
+                height="35"
+              />
+            </picture>
+          </a>
+          <button class="button-burger" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
+        </div>
+
+        <div class="main-nav__lists">
+          <ul class="main-nav__list main-nav__list--catalog">
+            <li class="main-nav__item main-nav__item--catalog">
+              <a class="main-nav__list-link" href="catalog.html"
+                >Каталог товаров</a
+              >
+            </li>
+
+            <li class="main-nav__item">
+              <a class="main-nav__list-link" href="form.html"
+                >Вязание на заказ
               </a>
-              <button class="button-burger" type="button">
-                <span class="visually-hidden">Открыть меню</span>
-              </button>
-            </div>
-          </div>
-          <div class="main-nav__list">
-            <ul class="main-nav__item">
-              <li class="main-nav__item-children main-nav__underline">
-                <a
-                  class="main-nav__link main-nav__link--big"
-                  href="catalog.html"
-                  >Каталог товаров</a
-                >
-              </li>
+            </li>
+          </ul>
 
-              <li class="main-nav__item-children main-nav__underline">
-                <a class="main-nav__link main-nav__link--big" href="form.html"
-                  >Вязание на заказ
-                </a>
-              </li>
-            </ul>
-
-            <ul class="main-nav__item main-nav__item--tablet">
-              <li class="main-nav__item-children main-nav__underline">
-                <a
-                  class="
-                    main-nav__link
-                    main-nav__link--search
-                    main-nav__notpadding--search
-                  "
+          <ul
+            class="main-nav__list main-nav__list--end main-nav__list--catalog"
+          >
+            <li class="main-nav__item main-nav__item--svg">
+              <a class="main-nav__list-link main-nav__list-link--img">
+                <svg
+                  class="main-nav__svg"
+                  width="18"
+                  height="18"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
                 >
-                  <span class="main-nav__span--search">Поиск по сайту</span></a
-                >
-              </li>
-              <li class="main-nav__item-children main-nav__underline">
-                <a class="main-nav__link main-nav__link--busket" href="#"
-                  ><span class="main-nav__span">Корзина: пока пуста</span></a
-                >
-              </li>
-            </ul>
-
-            <ul class="main-nav__item">
-              <li
-                class="
-                  main-nav__item-children
-                  main-nav__item--product
-                  main-nav__underline
-                "
+                  <path
+                    opacity=".2"
+                    d="M17.7 16l-3.5-3.4A7.8 7.8 0 008 0 7.8 7.8 0 000 7.9c0 4.4 3.5 7.8 7.9 7.8 1.7 0 3.3-.6 4.7-1.5l3.5 3.5c.2.2.4.3.8.3.6 0 1.1-.5 1.1-1.1l-.3-.8zM2.3 8c0-3 2.5-5.7 5.6-5.7 3 0 5.6 2.6 5.6 5.7 0 3-2.6 5.6-5.6 5.6-3 0-5.7-2.6-5.7-5.6z"
+                    fill="#000"
+                  />
+                </svg>
+                <span class="main-nav__span main-nav__span--delete"
+                  >Поиск по сайту</span
+                ></a
               >
-                <a class="main-nav__link main-nav__link--desktop" href="#"
-                  >Новые поступления</a
+            </li>
+            <li class="main-nav__item main-nav__item--svg">
+              <a class="main-nav__list-link main-nav__list-link--img" href="#"
+                ><svg
+                  class="main-nav__svg"
+                  width="21"
+                  height="18"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
                 >
-              </li>
+                  <path
+                    opacity=".2"
+                    d="M20.1884 6.85716h-3.5507L13.1884.380944c-.2029-.38095261-.6087-.4761791-1.0145-.2857028-.4058.1904758-.5072.5714288-.3043.9523788l3.1449 5.80954H5.7826l3.14493-5.80954c.2029-.38095.00001-.761903-.30433-.9523788-.4058-.1904763-.8116-.0000117-1.0145.2857028L4.1594 6.85716H.811583C.405785 6.85716 0 7.14286 0 7.61905c0 .38095.304336.76189.811583.76189h.202907l.91304 2.85716c-.2029.0952-.30436.2857-.30436.5714 0 .381.30436.6667.71015.6667L4.05797 18H16.942l1.7247-5.5238c.4058 0 .7101-.2857.7101-.6667 0-.1905-.1014-.4762-.3043-.5714l.913-2.85716h.2029c.4058 0 .8116-.2857.8116-.76189 0-.47619-.4058-.76189-.8116-.76189zm-4.5652 9.61904H5.07247L3.85506 12.381H16.942l-1.3188 4.0952zm1.6232-5.5238H3.34782l-.81159-2.66667H18.058l-.8116 2.66667z"
+                    fill="#000"
+                  />
+                </svg>
 
-              <li
-                class="
-                  main-nav__item-children
-                  main-nav__item--product
-                  main-nav__underline
-                "
+                <span class="main-nav__span">Корзина: пока пуста</span></a
               >
-                <a class="main-nav__link main-nav__link--desktop" href="#"
-                  >Распродажа</a
-                >
-              </li>
-            </ul>
+            </li>
+          </ul>
 
-            <div class="main-nav__item main-nav__link--small">
-              Бесплатная доставка по России
-            </div>
+          <ul class="main-nav__list main-nav__list--desktop">
+            <li class="main-nav__item">
+              <a class="main-nav__list-link" href="#">Новые поступления</a>
+            </li>
+
+            <li class="main-nav__item">
+              <a class="main-nav__list-link" href="#">Распродажа</a>
+            </li>
+          </ul>
+
+          <div class="main-nav__list main-nav__list--tablet">
+            Бесплатная доставка по России
           </div>
         </div>
       </nav>
