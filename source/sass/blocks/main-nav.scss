@@ -1,6 +1,5 @@
 .main-nav {
   @media (min-width: $tablet) {
-    position: absolute;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -49,6 +48,13 @@
 
   @media (min-width: $desktop) {
     padding-left: 20vw;
+
+    &--border {
+      padding-right: 2vw;
+      padding-top: 32px;
+      padding-bottom: 32px;
+      border-right: 1px solid $black-opacity1;
+    }
   }
 }
 
